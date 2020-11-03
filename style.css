@@ -1,0 +1,398 @@
+
+.container {
+    background-color: #05273f;
+    box-sizing: border-box;
+}
+body {box-sizing: border-box;}
+/*make the content in the row positioned side by side*/
+.row {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to right,#366c92,#ff5d14,#05273f);
+
+}
+/*add specified width to col-50 and col-25*/
+.col-50 {
+    flex: 50%;
+}
+.col-25 {
+    flex: 50%;
+}
+/*style the li*/
+nav ul li {
+    display: inline-block;
+} 
+/*style the nav links*/
+nav ul li a {
+    text-decoration: none;
+text-align: center;
+    padding:8px;
+    font-size: 1.2em;
+    color: whitesmoke;
+    
+}
+.header-links{
+    font-size: 25px;
+    margin: 30px 20px 0px 20px;
+    color: whitesmoke;
+}
+.header-links a {
+    color: whitesmoke;
+}
+.header-logo {
+    padding-left: 15px;
+}
+.nav-container {
+    margin-top: 30px;
+    text-align: center;
+}
+nav ul {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+
+/*make the width 100% on mobile devive*/
+@media (max-width:600px){
+    .row {
+        width: 100%;
+        display: block;
+        align-content: center;
+    }
+    .col-25 .header-logo {
+        text-align: center;
+        margin-bottom: 0px;
+        color:#05273f;
+    }
+    .header-links {
+        margin-left:90% ;
+
+    }
+    row::after {
+        content: "";
+        clear: both;
+    }
+}
+
+header {
+    background: linear-gradient(to right,#366c92,#09385e,#05273f);
+
+}
+.header-logo h1 {
+    color: #1a374d;
+}
+.header-text {
+    display: flex;
+    justify-content: center;
+    margin : 35px 0 20px 0;
+}
+.wrap-text {
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.wrap-text > h2 {
+    font-size: 2em;
+    animation: slideup 6s  infinite ease;
+}
+.wrap-text > p {
+    font-size: 1.5em;
+    text-align: center;
+    color: whitesmoke;
+    animation: slideup2 6s  infinite ease;
+
+}
+.wrap-text > button {
+    background-color:#ff5d14;
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 4px;
+    padding: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    animation: slideup3 6s  infinite ease;
+}
+@keyframes slideup {
+    from {transform: translateY(250px);}
+    to {transform: translateY(0px);
+    }
+}
+@keyframes slideup2 {
+    from {transform: translateY(270px);}
+    to {transform: translateY(0px);
+    }
+}
+@keyframes slideup3 {
+    from {transform: translateY(290px);}
+    to {transform: translateY(0px);
+    }
+}
+.guiter_img{
+    opacity: 0.8;
+    margin: 0;
+    height: 400px;
+}
+.main-container{
+    margin-top: 0px;
+    padding: 0;
+}
+/*style the overlay-text*/
+.overlay-text {
+text-align: center;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTqVPhw3m_0-DJZpdAlKdfsxaPF4HzoHcXnLQ&usqp=CAU);
+height: 400px;
+    opacity: 0.5;
+    padding:  14px;
+    font-size: 35px;
+    color:white;
+    padding: 50px;
+    border-radius:5px;
+    box-shadow: 2px 4px 2px 4px #ddd;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.overlay-text .inner-content{
+    margin-top: 20px;
+}
+audio {
+    border: none;
+    background-color: transparent;
+}
+.snow {
+
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+.s1 {
+    animation: s1  5s linear infinite;
+}
+.s2 {
+    animation: s2  4.8s .2s linear infinite;
+}
+.s3 {
+    animation: s3  4.6s .5s linear infinite;
+}
+.s4  {
+    animation: s4  5.1s .6s linear infinite;
+}
+.s5 {
+    animation: s5  4.6s .8s linear infinite;
+}
+.s6 {
+        animation: s6  5.2s .5s .1s linear infinite;
+}
+.s7  {
+    animation: s7  5.s 1.1s linear infinite;
+}
+.s8  {
+    animation: s8  4.6s 1.2s linear infinite
+}
+.s9 {
+    animation: s9  4.85s 1.4s linear infinite;
+}
+.s10 {
+    animation: s10  4.55s 1.55s linear infinite;
+}
+.s11{
+    animation: s11  5s 1.9s linear infinite;
+}
+.s12  {
+    animation: s12  4.4s 2.2s linear infinite;
+}
+.s13  {
+    animation: s13 4.7s 2.5s linear infinite;
+}
+.s14  {
+    animation: s14  5.25s 2.7s linear infinite;
+}
+.s15 {
+    animation: s15 5.15s 2.9s linear infinite;
+}
+.s16 {
+    animation: s16  4.95s 3.2s linear infinite;
+}
+.s17 {
+    animation: s17  4.7s 3.5s linear infinite;
+}
+.s18 {
+    animation: s18  4.8s 3.75s linear infinite;
+}
+.s19 {
+    animation: s1  4.9s 4s linear infinite;
+}
+.s20  {
+    animation: s2 4.7s 4.2s linear infinite;
+}
+.s21  {
+    animation: s1  4.5s 1.5s linear infinite;
+}
+.s22 {
+    animation:s2  4.2s 1.9s linear infinite;
+}
+.inner{
+    display: flex;
+    justify-content: space-around;
+}
+
+@keyframes s1 {0% {background-color:#052 ;}
+    10% {transform: scaleZ(.7); background-color: tomato;}
+    40% {transform: scaleZ(.9);background-color: burlywood;}
+}
+
+@keyframes s2 {0% {background-color:#05273f;}
+    10% {transform: scale(.7); background-color: darkorange;}
+    40% {transform: scale(.9);background-color: rgb(121, 126, 51);}
+    80% { transform:scale(1.2)}
+}
+@keyframes s3 {0% {background-color:#052 ;}
+    10% {transform: scaleZ(.7); background-color: tomato;}
+    40% {transform: scaleZ(.9);background-color: burlywood;}
+    80% { transform:scale(2)}
+}
+
+@keyframes s4 {0% {background-color:#05273f;}
+    10% {transform: scale(.7); background-color: darkorange;}
+    40% {transform: scale(.9);background-color: rgb(121, 126, 51);}
+    80% { transform:scale(1.2)}
+}
+@keyframes s5 {0% {background-color:#052 ;}
+    10% {transform: scaleZ(.7); background-color: tomato;}
+    40% {transform: scaleZ(.9);background-color: burlywood;}
+    80% { transform:scale(2)}
+}
+
+@keyframes s6 {0% {background-color:#05273f;}
+    10% {transform: scale(.7); background-color: darkorange;}
+    40% {transform: scale(.9);background-color: rgb(121, 126, 51);}
+    80% { transform:scale(2)}
+}
+@keyframes s7 {0% {background-color:#052 ;}
+10% {transform: scaleZ(.7); background-color: tomato;}
+40% {transform: scaleZ(.9);background-color: burlywood;}
+80% { transform:scale(2)}
+}
+@keyframes s8 {0% {background-color:#05273f;}
+    10% {transform: scale(.7); background-color: darkorange;}
+    40% {transform: scale(.9);background-color: rgb(121, 126, 51);}
+    80% { transform:scale(2)}
+}
+@keyframes s9 {0% {background-color:#052 ;}
+10% {transform: scaleZ(.7); background-color: tomato;}
+40% {transform: scaleZ(.9);background-color: burlywood;}
+80% { transform:scale(2)}
+}
+@keyframes s10 {0% {background-color:#05273f;}
+    10% {transform: scale(.7); background-color: darkorange;}
+    40% {transform: scale(.9);background-color: rgb(121, 126, 51);}
+    80% { transform:scale(2)}
+}
+@keyframes s11 {0% {background-color:#052 ;}
+10% {transform: scaleZ(.7); background-color: tomato;}
+40% {transform: scaleZ(.9);background-color: burlywood;}
+80% { transform:scale(2)}
+}
+@keyframes s12 {0% {background-color:#05273f;}
+    10% {transform: scale(.7); background-color: darkorange;}
+    40% {transform: scale(.9);background-color: rgb(121, 126, 51);}
+    80% { transform:scale(2)}
+}
+@keyframes s13 {0% {background-color:#052 ;}
+10% {transform: scaleZ(.7); background-color: tomato;}
+40% {transform: scaleZ(.9);background-color: burlywood;}
+80% { transform:scale(2)}
+}
+@keyframes s14 {0% {background-color:#05273f;}
+    10% {transform: scale(.7); background-color: darkorange;}
+    40% {transform: scale(.9);background-color: rgb(121, 126, 51);}
+    80% { transform:scale(2)}
+}
+@keyframes s15 {0% {background-color:#052 ;}
+10% {transform: scaleZ(.7); background-color: tomato;}
+40% {transform: scaleZ(.9);background-color: burlywood;}
+80% { transform:scale(2)}
+}
+@keyframes s16 {0% {background-color:#05273f;}
+    10% {transform: scale(.7); background-color: darkorange;}
+    40% {transform: scale(.9);background-color: rgb(121, 126, 51);}
+    80% { transform:scale(2)}
+}
+@keyframes s17 {0% {background-color:#052 ;}
+10% {transform: scaleZ(.7); background-color: tomato;}
+40% {transform: scaleZ(.9);background-color: burlywood;}
+80% { transform:scale(2)}
+}
+@keyframes s18 {0% {background-color:#05273f;}
+    10% {transform: scale(.7); background-color: darkorange;}
+    40% {transform: scale(.9);background-color: rgb(121, 126, 51);}
+    80% { transform:scale(2)}
+}
+.snow-container {
+    background-color:crimson;
+    padding: 14px;
+    margin: 0;
+    box-shadow:2px 3px 29px rgb(206, 198, 198);
+    animation: shadow 2s ease-in-out infinite;
+}
+@keyframes shadow {
+    50%{
+        box-shadow: 2px 4px 50px blue;
+    }
+    80% {
+        box-shadow: 3px 6px 50px chartreuse;
+    }
+}
+footer ul {
+list-style: none;
+text-align: center;
+margin: px;
+margin-bottom: 190px;
+}
+footer ul li {
+    display: inline-block;
+    padding: 14px;
+}
+.footer{
+    background-image: url(https://static.wixstatic.com/media/42dbaa_92e4f9fc0aa74b90853aea4430b4e914~mv2.png/v1/fill/w_600,h_477,al_c,q_85,usm_0.66_1.00_0.01/42dbaa_92e4f9fc0aa74b90853aea4430b4e914~mv2.webp);
+    background-color: crimson;
+    margin-top: 0px;
+    margin-top: 50px;
+
+}
+footer h3 {
+    font-size: 2.2rem;
+    color: whitesmoke;
+}
+footer p {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
+}
+input[type=submit]{
+    background-color: black;
+    color: whitesmoke;
+    padding: 5px 20px;
+    font-size: 23px;
+}
+input[type=email]{
+    
+    background-color: crimson;
+    border: none;
+     border-bottom:2px solid whitesmoke;
+     box-shadow: 2px 2px 95px crimson;
+}
+input[type=email]::placeholder{
+    color: whitesmoke;
+    text-align:left ;
+}
+@media (max-width:
+900px) {
+    input {
+        width: 100%;
+        display: block;
+        margin: 13px;
+    }
+}
